@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myibmwatsonapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mlibm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_mlibmadapt_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyIBMWatsonApp">
+        <activity android:name="com.example.assignment101.editDelete"
+            android:label="IBM and Google Image Classification"/>
+        <activity android:name="com.example.assignment101.listViewActivity"
+            android:label="IBM and Google Image Classification"/>
+        <activity android:name="com.example.assignment101.editImg"
+            android:label="Editing Classification Results"/>
+        <activity android:name="com.example.assignment101.imgVerify" />
+        <activity android:name="com.example.assignment101.imgVerify"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name="com.example.assignment101.MainActivity$imgVerify"
+            tools:ignore="MissingClass" />
+        <activity android:name="com.example.assignment101.imgProcess"
+            android:label="IBM and Google Image Classification"/>
+        <activity android:name="com.example.assignment101.captureLoad" />
+        <activity android:name="com.example.assignment101.MainActivity"
+            android:label="IBM and Google Image Classification">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.assignment101.imgProcess">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="287dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="This app uses cognitive services from IBM Watson and Google Machine Learning Kit to classify images"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibmwatson"
+        android:layout_width="326dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:onClick="gotocaptureLoadIBM"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ibmwatson1" />
+
+    <ImageButton
+        android:id="@+id/mlkit"
+        android:layout_width="365dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:onClick="gotocaptureLoadML"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibmwatson"
+        app:srcCompat="@drawable/mlkit1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
